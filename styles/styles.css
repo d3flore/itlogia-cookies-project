@@ -43,13 +43,36 @@ body {
   cursor: pointer;
 }
 
-.button:hover {
-    background-color: #eeeeee;
+.violet-button {
+  background-color: #5243f4;
+  color: white;
+  font-size: 18px;
 }
+
+.button:hover {
+  background-color: #eeeeee;
+}
+
+.violet-button:hover {
+  background-color: #4538d3;
+}
+
+.common-title {
+  font-family: "Steppe-ExtraBold", sans-serif;
+  font-size: 60px;
+  line-height: 100%;
+  text-align: center;
+}
+
 
 /* Header */
 .header {
   padding: 40px 0;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
 }
 
 .logo img {
@@ -109,8 +132,259 @@ body {
 }
 
 .main-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* Products */
+
+.products {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.products-items {
+  display: grid;
+  grid-template-columns: repeat(3, 384px);
+  gap: 90px 24px;
+  margin-top: 110px;
+}
+
+.products-item {
+  background-color: white;
+  color: #5d3427;
+}
+
+.products-item-image {
+  height: 202px;
+  text-align: center;
+}
+
+.products-item-image img {
+  height: 272px;
+  top: -70px;
+  position: relative;
+  max-width: 100%;
+}
+
+.products-item-details {
+  padding: 24px;
+}
+
+.products-item-title {
+  font-family: "Steppe-ExtraBold", sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.products-item-text {
+  height: 110px;
+  font-size: 14px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.products-item-extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products-item-price {
+  font-family: "Steppe-ExtraBold", sans-serif;
+  font-size: 24px;
+  color: #5243f4;
+  margin-bottom: 10px;
+}
+
+.products-item-weight {
+  font-size: 12px;
+}
+
+/* (По интенсиву) Love */
+.love {
+  padding: 64px 0 150px 0;
+}
+
+.love-items {
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.love-item {
+  width: 590px;
+  height: 453px;
+}
+
+.love-item-white {
+  background-color: white;
+  padding: 110px 80px;
+  box-sizing: border-box;
+  color: #5d3427;
+}
+
+.love-item-title {
+  font-family: "Steppe-ExtraBold", sans-serif;
+  font-size: 24px;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+
+.love-item-text {
+  font-size: 18px;
+  line-height: 130%;
+}
+
+/* (Мой вариант) Love */
+/* .section-love {
+  padding-top: 64px;
+  padding-bottom: 150px;
+}
+
+.content {
+  display: flex;
+  margin-top: 40px;
+}
+
+.love-details {
+  box-sizing: border-box;
+  background-color: white;
+  color: #5d3427;
+  padding: 110px 80px;
+  margin-right: 20px;
+}
+
+.love-title {
+  font-family: "Steppe-ExtraBold", sans-serif;
+  font-size: 24px;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+
+.love-text {
+  width: 430px;
+  height: 161px;
+  font-size: 18px;
+  line-height: 130%;
+} */
+
+/* Order */
+.order {
+  padding-bottom: 102px;
+  position: relative;
+}
+
+.order .container {
+  position: relative;
+}
+
+.order-block {
+  display: flex;
+  margin-top: 103px;
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(50px);
+}
+
+.order-form {
+  margin-left: 200px;
+  max-width: 387px;
+  padding-top: 40px;
+  padding-bottom: 44px;
+  box-sizing: border-box;
+}
+
+.order-form-text {
+  font-family: "Steppe-ExtraBold", sans-serif;
+  font-size: 18px;
+  line-height: 130%;
+
+}
+
+.order-form-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.order-form-inputs input {
+  box-sizing: border-box;
+  width: 385px;
+  height: 68px;
+  margin-bottom: 16px;
+  padding: 24px 22px;
+
+  border: 1px solid white;
+  border-radius: 60px;
+  outline: none;
+
+  font-family: "Steppe-Book";
+  font-size: 18px;
+  background-color: transparent;
+  color: white;
+}
+
+::placeholder {
+  color: rgba(255,255,255, 0.4);
+}
+
+.order-form-inputs .button.violet-button {
+  width: 387px;
+  height: 71px;
+}
+
+.order-block-image {
+  height: 501px;
+  margin-left: 109px;
+}
+
+.order-image {
+  height: 559px;
+  top: -58px;
+  position: relative;
+}
+
+.order-bg-image {
+  position: absolute;
+  top: 0;
+  right: calc(100% - 810px);
+  z-index: -1;
+}
+
+/* Footer */
+.footer {
+  padding-top: 126px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.rights {
+  margin-top: 14px;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+/* Background line */
+.line1 {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: calc(100% - 960px);
+}
+
+.line2 {
+  position: absolute;
+  z-index: -1;
+  top: -40px;
+  left: 0;
+}
+
+.line3 {
+  position: absolute;
+  z-index: -1;
+  top: -920px;
+  left: 0;
 }
